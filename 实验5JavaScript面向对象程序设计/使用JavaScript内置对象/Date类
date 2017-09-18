@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var MyDate;
+	MyDate = new Date();
+	document.write("现在是："+MyDate.getFullYear() + "年" + (MyDate.getMonth()+1) + "月" + MyDate.getDate() + "日");
+</script>
+</body>
+</html>

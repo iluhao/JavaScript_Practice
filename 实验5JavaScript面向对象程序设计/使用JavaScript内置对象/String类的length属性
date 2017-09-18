@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var Mystr;
+	Mystr = new String("这是一个测试字符串");
+	document.write("Mystr的长度是：" + Mystr.length);
+</script>
+</body>
+</html>
