@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+</head>
+<body>
+<script type="text/javascript">
+	function sum(a,b) {
+		return a+b;
+	}
+	document.write(sum(333,333));
+
+</script>
+</body>
+</html>

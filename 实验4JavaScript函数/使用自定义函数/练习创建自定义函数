@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function PrintWelcome() {
+		document.write("welcome to javascript"+"<br>");
+	}
+	function addnums(a, b) {
+		document.write(a+b);
+	}
+	PrintWelcome();
+	addnums(2,4);
+</script>
+
+</body>
+</html>

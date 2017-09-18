@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function sum(a,b) {
+		// body...
+		document.write(a+b);
+	}
+
+	sum(444,444);
+</script>
+<a href="javascript:sum(333,333)">点击我</a>
+</body>
+</html>
