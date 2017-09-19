@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<a href="http://iluhao.top" id="test">逆天耗子</a>
+	<script type="text/javascript">
+		function stopDefault(e) {
+
+			if(e && e.preventDefault){ //其他浏览器执行这个
+				e.preventDefault();
+			}else{
+				window.event.returnValue = false; // IE浏览器执行这个
+			}
+			return false;
+		}
+		var test = document.getElementById('test');
+		test.onclick = function(e){
+			alert('URL:' + this.href +',不会跳转');
+			stopDefault(e);
+		}
+	</script>
+</body>
+</html>
