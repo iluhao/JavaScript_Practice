@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function doSomething(obj, evt) {
+			alert(obj.id);
+			var e = (evt)?evt:window.event;
+
+			// 对于不支持cancelBubble属性的浏览器，调用stopPropagation()方法停止事件冒泡
+			if (window.event) {
+				e.cancelBubble = true;
+			}else{
+				// e.preventDefault();
+				e.stopPropagation();
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="parent1" onclick="alert(this.id)">
+		<p>this is parent1</p>
+		<div id="child1" onclick="alert(this.id)">
+			<p>this is child1</p>
+		</div>
+		<p>this is parent1</p>
+	</div>
+
+	<div id="parent2" onclick="alert(this.id)">
+		<p>this is parent2</p>
+		<!--  停止冒泡（从下至上） -->
+		<div id="child2"  onclick="doSomething(this,event)">
+			<p>this is child2 will bubble</p>
+		</div>
+		<p>this is parent2</p>
+	</div>
+</body>
+</html>
