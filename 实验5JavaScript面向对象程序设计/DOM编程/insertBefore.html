@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="board">div元素</div>
+	<script type="text/javascript">
+		var board = document.getElementById("board");
+		var txt = document.createElement("input");
+		txt.type = "button";
+		txt.value = "这是测试按钮";
+		board.parentNode.insertBefore(txt,board);
+	</script>
+</body>
+</html>
