@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function upperCase(x) {
+			var y = document.getElementById(x).value;
+			document.getElementById(x).value = y.toUpperCase();		
+		}
+	</script>
+</head>
+<body>
+	<p>Enter you name:</p>
+		<input type="text" name="" id="fname" onkeyup="upperCase(this.id)">
+</body>
+</html>
