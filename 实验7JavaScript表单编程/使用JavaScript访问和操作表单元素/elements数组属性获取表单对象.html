@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form id="myform">
+		FirstName：
+		<input type="text" name="" id="fname" value="Mickry">
+		LsstName:
+		<input type="text" name="" id="lname" value="Mouse">
+		<input type="button" name="" id="sub" value="Submit">
+	</form>
+	<p>Get the value of all the elements in the form:<br></p>
+	<script type="text/javascript">
+		var x = document.getElementById("myform");
+		for (var i = 0; i < x.length; i++) {
+			document.write(x.elements[i].value + "<br>");
+			document.write(x.elements[i].type + "<br>");
+		}
+	</script>
+</body>
+</html>
